@@ -35,7 +35,9 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String register(@RequestParam("loginName") String loginName, @RequestParam("password") String password,
+	public String register(
+	        @RequestParam("loginName") String loginName,
+			@RequestParam("password") String password,
 			@RequestParam("userName") String userName) {
 		logger.info("register POST方法被调用");
 		String srtTest = "";
@@ -56,7 +58,9 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "login")
-	public String login(@RequestParam("loginName") String loginName, @RequestParam("password") String password,
+	public String login(
+	        @RequestParam("loginName") String loginName,
+	        @RequestParam("password") String password,
 			Model model) {
 		logger.info("登录名: " + loginName + " 密码: " + password);
 		for (User user : userLst) {

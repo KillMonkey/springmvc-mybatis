@@ -20,7 +20,7 @@
       <filter-name>encodingFilter</filter-name>
       <url-pattern>/*</url-pattern>
   </filter-mapping>
-  <!-- 以上配置代码解决编码格式的问题此 -->
+  <!-- 以上配置代码解决编码格式的问题此  http://blog.sina.com.cn/s/blog_b31ad6dd0101c4ac.html -->
   
   <servlet>
   	<servlet-name>springmvc</servlet-name>
